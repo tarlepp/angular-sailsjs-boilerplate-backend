@@ -1,5 +1,7 @@
 # Backend side for angular-sailsjs-boilerplate
 
+[![Dependency Status](https://david-dm.org/tarlepp/angular-sailsjs-boilerplate-backend.svg)](https://david-dm.org/tarlepp/angular-sailsjs-boilerplate-backend)
+
 Backend is a [Sails.js](http://sailsjs.org) application without frontend. See more info at http://sailsjs.org/ I have 
 just done some small tweaks to generic workflow of sails nothing else. Basically this only serves an API and
 user authentication services - nothing else.
