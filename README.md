@@ -1,4 +1,4 @@
-# Backend side for angular-sailsjs-boilerplate
+# Backend for angular-sailsjs-boilerplate
 [![Build Status](https://travis-ci.org/tarlepp/angular-sailsjs-boilerplate-backend.png?branch=master)](https://travis-ci.org/tarlepp/angular-sailsjs-boilerplate-backend)
 [![Dependency Status](https://david-dm.org/tarlepp/angular-sailsjs-boilerplate-backend.svg)](https://david-dm.org/tarlepp/angular-sailsjs-boilerplate-backend)
 [![devDependency Status](https://david-dm.org/tarlepp/angular-sailsjs-boilerplate-backend/dev-status.svg)](https://david-dm.org/tarlepp/angular-sailsjs-boilerplate-backend#info=devDependencies)
@@ -14,7 +14,7 @@ This backend code is part of [angular-sailsjs-boilerplate](https://github.com/ta
 First of all you have to install npm, node.js / io.js and sails to your box. Installation instructions can be 
 found [here](http://sailsjs.org/get-started).
 
-After that make sure that you have sails installed by running following commands in your shell:
+After that make sure that you have all necessary components installed by running following commands in your shell:
 
 ```
 npm --version
@@ -47,7 +47,9 @@ commands:
 
 ```
 sails lift
+```
 OR
+```
 node app.js
 ```
 
@@ -66,6 +68,8 @@ Below is small list of possible failures that can occur while trying this.
         </ul>
     </li>
 </ol>
+
+<em>And if _you_ have some problems, please add solutions to this list...</em>
 
 ## Author
 Tarmo Leppänen
