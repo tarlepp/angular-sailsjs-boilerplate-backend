@@ -1,6 +1,5 @@
 # Backend side for angular-sailsjs-boilerplate
 [![Build Status](https://travis-ci.org/tarlepp/angular-sailsjs-boilerplate-backend.png?branch=master)](https://travis-ci.org/tarlepp/angular-sailsjs-boilerplate-backend)
-
 [![Dependency Status](https://david-dm.org/tarlepp/angular-sailsjs-boilerplate-backend.svg)](https://david-dm.org/tarlepp/angular-sailsjs-boilerplate-backend)
 
 Backend is a [Sails.js](http://sailsjs.org) application without frontend. See more info at http://sailsjs.org/ I have 
