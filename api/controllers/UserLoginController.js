@@ -1,7 +1,7 @@
 'use strict';
 
 var _ = require('lodash');
-var Promise = require("bluebird");
+var Promise = require('bluebird');
 
 /**
  * UserLoginController
@@ -10,7 +10,7 @@ var Promise = require("bluebird");
  * @help        :: See http://links.sailsjs.org/docs/controllers
  */
 module.exports = _.merge(_.cloneDeep(require('../base/Controller')), {
-  statistics: function statistics(request, response) {
+  'statistics': function statistics(request, response) {
     var type = request.param('type');
     var groupBy;
 
@@ -33,7 +33,7 @@ module.exports = _.merge(_.cloneDeep(require('../base/Controller')), {
      * @returns {Promise}
      */
     var fetchStatistics = function fetchStatistics() {
-      return sails.models.userlogin
+      return sails.models['userlogin']
         .find({sum: 'count'})
         .groupBy(groupBy)
       ;
@@ -42,7 +42,7 @@ module.exports = _.merge(_.cloneDeep(require('../base/Controller')), {
     /**
      * Helper function to fetch user data. Note that this is only applied if action is 'User'
      *
-     * @returns {Promise}
+     * @returns {Promise|Array}
      */
     var fetchUsers = function fetchUsers() {
       return (groupBy === 'userId') ? sails.models.user.find() : [];
@@ -55,7 +55,7 @@ module.exports = _.merge(_.cloneDeep(require('../base/Controller')), {
      *            stats: {}[],
      *            users: {}[]
      *          }}  data
-     * @returns {array}
+     * @returns {Array}
      */
     var formatData = function formatData(data) {
       return _.map(data.stats, function iterator(item) {
@@ -84,7 +84,7 @@ module.exports = _.merge(_.cloneDeep(require('../base/Controller')), {
     /**
      * Generic success handler which is triggered when all jobs are done and data is ready to sent to client.
      *
-     * @param   {array} data  Data array to send to client
+     * @param   {Array} data  Data array to send to client
      */
     var handlerSuccess = function handlerSuccess(data) {
       response.ok(data);
