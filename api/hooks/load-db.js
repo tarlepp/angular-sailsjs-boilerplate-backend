@@ -1,5 +1,7 @@
 'use strict';
 
+var _ = require('lodash');
+
 /**
  * load-db.js
  *
@@ -30,8 +32,15 @@ module.exports = function hook(sails) {
             var barrels = new Barrels();
             var fixtures = _.keys(barrels.data);
 
-            // Do actual database population
-            barrels.populate(fixtures, next, false);
+            barrels.populate(['user'], function(error) {
+              if (error) {
+                next(error);
+              }
+
+              fixtures = _.without(fixtures, 'user');
+
+              barrels.populate(fixtures, next, false);
+            }, false);
           }
         })
       ;

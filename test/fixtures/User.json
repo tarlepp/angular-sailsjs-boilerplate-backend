@@ -1,14 +1,14 @@
 [
     {
+        "id": 1,
         "username": "admin",
         "email": "admin@some.domain",
         "firstName": "Arnold",
         "lastName": "Administrator",
-        "admin": true,
-        "createdUser": 1,
-        "updatedUser": 1
+        "admin": true
     },
     {
+        "id": 2,
         "username": "demo",
         "email": "demo@some.domain",
         "firstName": "John",
