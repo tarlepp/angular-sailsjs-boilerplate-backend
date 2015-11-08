@@ -1,4 +1,5 @@
 # Backend for angular-sailsjs-boilerplate
+[![GitHub version](https://badge.fury.io/gh/tarlepp%2Fangular-sailsjs-boilerplate-backend.svg)](https://badge.fury.io/gh/tarlepp%2Fangular-sailsjs-boilerplate-backend)
 [![Build Status](https://travis-ci.org/tarlepp/angular-sailsjs-boilerplate-backend.png?branch=master)](https://travis-ci.org/tarlepp/angular-sailsjs-boilerplate-backend)
 [![Dependency Status](https://david-dm.org/tarlepp/angular-sailsjs-boilerplate-backend.svg)](https://david-dm.org/tarlepp/angular-sailsjs-boilerplate-backend)
 [![devDependency Status](https://david-dm.org/tarlepp/angular-sailsjs-boilerplate-backend/dev-status.svg)](https://david-dm.org/tarlepp/angular-sailsjs-boilerplate-backend#info=devDependencies)
