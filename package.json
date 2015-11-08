@@ -1,7 +1,7 @@
 {
   "name": "backend-server",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Backend server for angular-sailsjs-boilerplate a Sails application that serves just a JSON API for frontend application",
   "keywords": [
     "sails.js",
