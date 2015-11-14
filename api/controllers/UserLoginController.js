@@ -34,8 +34,8 @@ module.exports = _.merge(_.cloneDeep(require('../base/Controller')), {
      */
     var fetchStatistics = function fetchStatistics() {
       return sails.models['userlogin']
-        .find({sum: 'count'})
-        .groupBy(groupBy)
+          .find().sum('count')
+          .groupBy(groupBy)
       ;
     };
 
